@@ -1,0 +1,187 @@
+body {
+margin: 0 auto;
+font-family: 'Ubuntu', sans-serif;
+font-size: 20px;
+line-height: 30px;
+background-color: #e7e7de;
+}
+
+::selection {
+  background-color: #16c79a;
+}
+
+header, footer {
+  background-color: #19456b;
+background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  text-align: center;
+}
+header {
+  height: 650px;
+}
+
+header h1 {
+  -webkit-text-fill-color: #19456b !important;
+  -webkit-text-stroke: 3px #16c79a !important;
+  font-family: 'Hachi Maru Pop', cursive;
+  font-size: 90px;
+}
+
+header img {
+  border-radius: 150px;
+  width: 600px;
+  border: 5px solid #16c79a;
+  margin: 40px 0;
+  max-width: 100%;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+}
+
+
+main img {
+  max-width: 100%;
+}
+
+.story {
+    padding: 20px 0;
+    text-align: justify;
+  }
+
+  h2 {
+    font-size: 30px;
+    color: #008891;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
+  h3 {
+    font-size: 40px;
+    color: #008891;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
+  a {
+    color: #008891;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover{
+    color: #16c79a;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+
+/* Carousel */
+
+.characters {
+  padding: 30px 0 50px 0;
+  text-align: center;
+}
+
+.characters-image {
+  width: 35%;
+  border-radius: 100px;
+  border: 5px solid #16c79a;
+  margin: 15px 15px 15px 70px;
+  float: left;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
+}
+
+.carousel-inner p {
+padding-right: 10%;
+align-self: center;
+}
+
+
+/* Other characters */
+
+.other-characters{
+margin: 40px 0;
+}
+
+.right-alignment {
+  text-align: right;
+}
+
+
+.button {
+  border: 1px solid #008891;
+  text-decoration: none;
+  color: #008891;
+  padding: 5px 20px;
+  margin: 35px 0;
+  display: inline-block;
+  border-radius: 50px;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out,
+
+}
+.button:hover {
+  background: #16c79a;
+  color: white;
+}
+
+.other-characters img {
+  border-radius: 50%;
+  padding-top: 15px;
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.3));
+}
+img.right-shadow {
+    filter: drop-shadow(-10px 10px 5px rgba(0, 0, 0, 0.3));
+}
+
+figcaption {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+
+/* Footer */
+
+footer {
+  color: white;
+  padding: 30px 0;
+}
+
+footer .i-icon a {
+  font-size: 30px;
+  color: white;
+  margin: 0 15px;
+
+}
+
+footer .i-icon a:hover {
+  color: #16c79a;
+  transition: 0.5s all;
+}
+footer ul {
+  padding-left: 0;
+}
+
+
+
+@media (max-width: 700px) {
+  .characters {
+text-align: center;
+  }
+  .characters-image {
+    float: none !important;
+    align-items: center;
+    margin: 0 0 30px 0 !important;
+  }
+  .carousel-item-next, .carousel-item-prev, .carousel-item.active {
+      display: block !important;
+  }
+
+  .carousel-inner p {
+  padding: 0 10%;
+  }
+}
